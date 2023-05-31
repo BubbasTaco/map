@@ -1,0 +1,172 @@
+/******************************
+ CSS history
+*******************************/
+
+/* global styling */
+
+:root {
+    --fg-clr-normal: #111;
+    --fg-clr-gray: #3a3a3a;
+    --fg-clr-link: rgb(7, 78, 118);
+    --fg-clr-accent: rgb(0, 166, 255);
+    --fg-clr-white: #fff;
+
+    --bg-clr-header: rgb(255, 0, 0);
+    --bg-clr-blue: rgb(0, 38, 255);
+    --bg-clr-offwhite: rgb(255, 234, 0);
+
+    --line-clr-black: #111;
+
+    --img-width-small: 150px;
+    --img-width-medium: 300px;
+    --img-width-full: 100%;
+
+    --padding-tight: .4rem;
+    --padding-normal: 5em;
+
+    --ft-weight-400: 400;
+    --ft-weight-700: 700;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: var(--ft-weight-400);
+}
+
+
+
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: var(--padding-normal);
+    background: var(--bg-clr-header);
+    align-items: center;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.primary-navigation {
+    width: 100%;
+    height: 40px;
+    background: var(--bg-clr-blue);
+}
+
+.primary-navigation__links {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.main-content {
+    /*width: 60%;*/
+    background: var(--bg-clr-offwhite);
+    align-items: center;
+}
+
+.footer {
+    background: var(--bg-clr-blue);
+}
+
+
+/* image styling */
+
+.inline-image {
+    object-fit: cover;
+}
+
+.inline-image-small {
+    width: var(--img-width-small);
+}
+
+.inline-image-medium {
+    width: var(--img-width-medium);
+}
+
+.inline-image-full {
+    width: var(--img-width-full);
+}
+
+
+/* text styling */
+
+.header-caption {
+    font-weight: var(--ft-weight-700);
+    color: var(--fg-clr-white);
+}
+
+p {
+    padding: var(--padding-tight);
+    color: var(--fg-clr-gray);
+}
+
+
+/* link styling */
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--fg-clr-link)
+}
+
+.nav-link:visited {
+    color: var(--fg-clr-link)
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: red;
+    border: 5px;
+    border-color: black;
+    scale: 1.2;
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+.botten-img {
+    width: 1000%;
+    height: 100%;
+    position: flex;
+    margin-bottom: 40px;
+}
+
+/* compability & responsiveness */
+
+.main-content__dom {
+    margin: 100px;
+    padding: 5px;
+    position: flex;
+
+
+}
+
+.skip-link {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    background: blue;
+    translate: 0 -100%;
+    transition: translate 150ms ease-in-out;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+.skip-link:hover,
+.skip-link:focus {
+    color: orange;
+    text-decoration: underline;
+    translate: 0;
+}

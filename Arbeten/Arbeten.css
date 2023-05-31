@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    display: flex;
+    border: 2px solid lightblue;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 750px;
+    margin-left: 20%;
+    gap: 2rem
+}
+
+.row1 {
+    border: solid lightskyblue;
+    width: 450px;
+
+
+}
+
+.col1 {
+    border: 1px solid black;
+    height: 5%;
+}
